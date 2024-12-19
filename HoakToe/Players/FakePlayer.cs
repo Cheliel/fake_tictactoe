@@ -57,23 +57,27 @@ namespace TicTacToe
             return d;
         }
 
-        public Result<PlayerMove> GetNextMove()
+        public Task<Result<PlayerMove>> GetNextMove()
         {
             Console.WriteLine($"Player {_icon} - Enter row (1-3) and column (1-3), separated by a space");
             PlayerMove currentMove = _moves.Dequeue();
 
+            Result<PlayerMove> result;
+
             if (int.TryParse(currentMove.Row.ToString(), out int targetRow) is false ||
                 targetRow < 1 || targetRow > 3)
             {
-                return Result.Failure<PlayerMove>("Invalid target cell row must be betwen 1 and 3");
+                result = Result.Failure<PlayerMove>("Invalid target cell row must be betwen 1 and 3");
             }
 
             if (int.TryParse(currentMove.Column.ToString(), out int targetColumn) is false ||
                 targetColumn < 1 || targetColumn > 3)
             {
-                return Result.Failure<PlayerMove>("Invalid target cell column must be betwen 1 and 3");
+                result = Result.Failure<PlayerMove>("Invalid target cell column must be betwen 1 and 3");
             }
-            return Result.Success(currentMove);
+            result = Result.Success(currentMove);
+
+            return Task.Run(() => result);
         }
 
         private void addWinnerMoves()

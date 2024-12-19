@@ -2,6 +2,7 @@
 using TicTacToe.Boards;
 using TicTacToe.Display;
 using TicTacToe.Players;
+using static HoakToe.GameResult;
 
 namespace HoakToe.Game;
 
@@ -25,13 +26,13 @@ public class Game
         this.display = display;
     }
 
-    public GameResult.Values Play()
+    public async Task<GameResult.Values> Play()
     {
         board.DisplayGameBoard();
 
         while (true)
         {
-            Result<PlayerMove> playerMoves = currentPlayer.GetNextMove();
+            Result<PlayerMove> playerMoves = await currentPlayer.GetNextMove();
             if (playerMoves.IsFailure)
             {
                 display.WriteLine(playerMoves.Error);

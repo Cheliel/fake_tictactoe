@@ -15,7 +15,7 @@ public class Program
 
         Game game = new Game(display, players.Item1, players.Item2);
 
-        game.Play();
+        game.Play().Wait();
     }
 
     private static (IPlayer, IPlayer) SelectPlayers()

@@ -16,7 +16,7 @@ namespace testMoprion
     public class GameTest
     {
         [Fact]
-        public void GameWin()
+        public async Task GameWin()
         {
             System.Diagnostics.Debug.WriteLine("GameWin");
             //arrange
@@ -27,7 +27,7 @@ namespace testMoprion
 
 
             //Act 
-            GameResult.Values gameResult = game.Play();
+            GameResult.Values gameResult = await game.Play();
 
             //Assert
             gameResult.Should().Be(GameResult.Values.Win);
@@ -36,7 +36,7 @@ namespace testMoprion
         }
 
         [Fact]
-        public void GameDraw()
+        public async Task GameDraw()
         {
             //arrange
             IDisplay display = new DebugDisplay();
@@ -45,7 +45,7 @@ namespace testMoprion
             Game game = new Game(display, player, player2);
 
             //Act 
-            GameResult.Values gameResult = game.Play();
+            GameResult.Values gameResult = await game.Play();
 
             //Assert
             gameResult.Should().Be(GameResult.Values.Draw);
