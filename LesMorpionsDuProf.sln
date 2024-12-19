@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LesMorpionsDuProf", "LesMorpionsDuProf\LesMorpionsDuProf.csproj", "{A6F6097F-5231-4E5F-AEC0-1EFE84C74AA5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exo1_interface", "LesMorpionsDuProf\Exo1_interface.csproj", "{A6F6097F-5231-4E5F-AEC0-1EFE84C74AA5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testMoprion", "testMoprion\testMoprion.csproj", "{368314E3-CABC-4715-82C2-36925F74F433}"
 EndProject

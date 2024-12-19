@@ -1,4 +1,5 @@
-﻿using TicTacToe.Display;
+﻿using HoakToe.Game;
+using TicTacToe.Display;
 using TicTacToe.Players;
 
 namespace TicTacToe;
