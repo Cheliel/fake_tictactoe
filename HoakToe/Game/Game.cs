@@ -50,11 +50,12 @@ public class Game
             if (gameResult == GameResult.Values.Draw || gameResult == GameResult.Values.Win)
             {
                 display.WriteLine(GameResult.getEndGameMessage());
-                return gameResult;
+                break;
             }
 
             SwitchPlayer();
         }
+        return GameResult.gameState;
     }
 
     private void SwitchPlayer()

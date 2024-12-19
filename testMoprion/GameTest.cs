@@ -40,8 +40,8 @@ namespace testMoprion
         {
             //arrange
             IDisplay display = new DebugDisplay();
-            IPlayer player = new FakePlayer(PlayerConstants.PlayerOneIcon, "2 2,3 1,1 2,1 2,1 3");
-            IPlayer player2 = new FakePlayer(PlayerConstants.PlayerTwoIcon, "1 3,1 1,2 3,3 2, 1 1");
+            IPlayer player = new FakePlayer(PlayerConstants.PlayerOneIcon, "2 2,1 1,3 2,2 1,1 3");
+            IPlayer player2 = new FakePlayer(PlayerConstants.PlayerTwoIcon, "3 1,3 3,1 2,2 3");
             Game game = new Game(display, player, player2);
 
             //Act 
