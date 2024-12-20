@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testMoprion", "testMoprion\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoakToe", "HoakToe\HoakToe.csproj", "{2E37AD20-E9AE-4111-8BB7-A8527F82E7EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fantasticFOUR_tdd", "fantasticFOUR_tdd\fantasticFOUR_tdd.csproj", "{C1BBD04C-A6D5-4E36-8687-1FF6696293C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test_fantasticFOUR", "test_fantasticFOUR\test_fantasticFOUR.csproj", "{791D245C-17B5-40D8-8C53-6D7398A0BB21}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{2E37AD20-E9AE-4111-8BB7-A8527F82E7EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E37AD20-E9AE-4111-8BB7-A8527F82E7EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E37AD20-E9AE-4111-8BB7-A8527F82E7EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1BBD04C-A6D5-4E36-8687-1FF6696293C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1BBD04C-A6D5-4E36-8687-1FF6696293C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1BBD04C-A6D5-4E36-8687-1FF6696293C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1BBD04C-A6D5-4E36-8687-1FF6696293C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{791D245C-17B5-40D8-8C53-6D7398A0BB21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{791D245C-17B5-40D8-8C53-6D7398A0BB21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{791D245C-17B5-40D8-8C53-6D7398A0BB21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{791D245C-17B5-40D8-8C53-6D7398A0BB21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -15,13 +15,13 @@ namespace testMoprion
     public class PlayerTest
     {
         [Fact]
-        public void Move()
+        public async Task Move()
         {
             //arrange
             IPlayer player1 = new RandomPlayer('X');
 
             //act
-            Result<PlayerMove> activeMove = player1.GetNextMove();
+            Result<PlayerMove> activeMove = await player1.GetNextMove();
 
             //assert
             Assert.InRange(activeMove.Value.Row, 1, 3);
